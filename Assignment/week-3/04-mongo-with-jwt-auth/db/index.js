@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
+const dbConnectionUrl =
+  process.env.DB_CONNECTION_URL || "default_connection_url";
 // Connect to MongoDB
-mongoose.connect(
-  "mongodb+srv://varunpurohit:NmRjlg0Beqge8zew@cluster0.gsmoxfn.mongodb.net/course-selling-app2"
-);
+mongoose.connect(dbConnectionUrl);
 
 // Define schemas
 const AdminSchema = new mongoose.Schema({
