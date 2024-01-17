@@ -70,7 +70,7 @@ router.get("/purchasedCourses", userMiddleware, async (req, res) => {
   const user = await User.findOne({
     username: req.username,
   });
-  console.log(user.purchasedCourses);
+  // console.log(user.purchasedCourses);
   const courses = await Course.find({
     _id: {
       // prettier-ignore

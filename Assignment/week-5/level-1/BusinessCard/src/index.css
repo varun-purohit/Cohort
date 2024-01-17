@@ -1,0 +1,106 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  background-color: #f8f9fa;
+  width: 400px;
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 3rem;
+  margin: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container .name {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.desc {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #555;
+}
+
+.container h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.container div {
+  list-style-type: none;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.container .int {
+  font-size: 1.5rem;
+  color: #333;
+  background-color: rgb(179, 179, 179);
+  margin: 0 1rem 0 0;
+  padding: 0.5rem;
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+}
+
+.container a {
+  margin: 1rem 0;
+}
+
+/* INPUT */
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  width: 400px;
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 3rem;
+  margin: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.input_container input {
+  padding: 1rem;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 5px;
+  /* width: 100%; */
+  margin: 0.7rem 0;
+}
+
+.input_container button {
+  align-self: flex-end;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 5px;
+  color: #777;
+  background-color: rgb(173, 173, 173);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  text-decoration: none #d1d5db solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}

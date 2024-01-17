@@ -22,7 +22,7 @@ router.get("/courses", async (req, res) => {
   res.json({ courses: allCourses });
 });
 
-router.post("/courses/:courseId", async (req, res) => {
+router.post("/courses/:courseId", userMiddleware, async (req, res) => {
   // Implement course purchase logic
   const courseId = req.params.courseId;
   const username = req.headers.username;
@@ -42,7 +42,7 @@ router.post("/courses/:courseId", async (req, res) => {
   res.json({ message: "Purchase Complete" });
 });
 
-router.get("/purchasedCourses", async (req, res) => {
+router.get("/purchasedCourses", userMiddleware, async (req, res) => {
   // Implement fetching purchased courses logic
   const user = await User.findOne({
     username: req.headers.username,

@@ -1,4 +1,4 @@
-const { Admin } = require("../db");
+const { User } = require("../db");
 
 function userMiddleware(req, res, next) {
   // Implement user auth logic
