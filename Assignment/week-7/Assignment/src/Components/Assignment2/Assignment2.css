@@ -1,0 +1,18 @@
+.color-palette {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  max-width: 100%;
+  position: relative;
+  left: 25%;
+  top: 70rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 0.8rem 0.5rem;
+  background-color: white;
+}
+
+.color-palette button {
+  padding: 0.65rem 2rem;
+  border-radius: 2.4rem;
+  border: none;
+}
