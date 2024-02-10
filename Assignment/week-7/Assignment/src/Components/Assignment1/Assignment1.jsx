@@ -1,20 +1,6 @@
-import { useState } from "react";
 import "./Assignment1.css";
 
 const Assignment1 = () => {
-  const [component, setComponent] = useState(false);
-  return (
-    <div>
-      {" "}
-      <button onClick={() => setComponent(true)}>Assignment1</button>
-      {component && <Profile />}
-    </div>
-  );
-};
-
-export default Assignment1;
-
-const Profile = () => {
   return (
     <div className="profile-container">
       <div className="image">
@@ -52,3 +38,5 @@ const Profile = () => {
     </div>
   );
 };
+
+export default Assignment1;
