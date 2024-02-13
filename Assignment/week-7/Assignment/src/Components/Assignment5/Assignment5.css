@@ -1,0 +1,91 @@
+.profile-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 37rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.profile-container .image {
+  height: 7rem;
+  width: 7rem;
+  margin-bottom: 2rem;
+}
+
+.profile-container::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background-image: url("https://www.shutterstock.com/shutterstock/videos/1083307942/thumb/7.jpg?ip=x480");
+  z-index: -1;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.profile-container .profile-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  margin: 10.6rem 0 0 0;
+}
+
+.profile-container .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 9rem 0 0 0;
+}
+
+.profile-container .text-data p {
+  font-size: 2.2rem;
+  margin: 0.2rem 0;
+}
+
+.profile-container .text-data p:last-child {
+  font-size: 1.5rem;
+}
+
+.profile-container .line {
+  height: 0.1rem;
+  width: 100%;
+  background-color: black;
+  margin-top: 10rem;
+}
+
+.prof-line {
+  height: 0.1rem;
+  width: 100%;
+  background-color: rgb(171, 171, 171);
+  margin-top: 5rem;
+}
+
+.social-data {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.followers,
+.likes,
+.photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prof-p1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.prof-p2 {
+  font-size: 1.2rem;
+}
