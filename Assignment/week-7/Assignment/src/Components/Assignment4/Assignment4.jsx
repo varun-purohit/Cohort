@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import "./Assignment4.css";
+import s from "./Assignment4.module.css";
 
 function Assignment4() {
   const [wordCount, setWordCount] = useState(null);
   const [paragraph, setParagraph] = useState("");
-
-  const handleInputChange = (event) => {};
 
   const words = [
     "Lorem",
@@ -48,9 +46,9 @@ function Assignment4() {
   };
 
   return (
-    <div className="container">
+    <div className={s.container}>
       <h2>Para Generator</h2>
-      <div className="input">
+      <div className={s.input}>
         <input
           type="number"
           placeholder="Enter Number of Words"

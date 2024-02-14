@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./Assignment5.css";
+import s from "./Assignment5.module.css";
 
 function Assignment5() {
   const [profData, setProfDtata] = useState({});
@@ -13,16 +13,16 @@ function Assignment5() {
     gitData();
   }, []);
   return (
-    <div className="profile-container">
+    <div className={s.profile_container}>
       {/* {console.log("avatarurl", console.log(profData))} */}
-      <div className="image">
+      <div className={s.image}>
         <img
           src={profData?.avatar_url}
           alt="Profile Image"
-          className="profile-img"
+          className={s.profile_img}
         />
       </div>
-      <div className="text-data">
+      <div className={s.text_data}>
         <p>
           <b>{profData?.name}</b>
         </p>
@@ -30,20 +30,20 @@ function Assignment5() {
         <p>{profData?.bio}</p>
       </div>
 
-      <div className="prof-line"></div>
+      <div className={s.prof_line}></div>
 
-      <div className="social-data">
-        <div className="followers">
-          <p className="prof-p1">{profData.followers} </p>
-          <p className="prof-p2"> Followers</p>
+      <div className={s.social_data}>
+        <div className={s.followers}>
+          <p className={s.prof_p1}>{profData.followers} </p>
+          <p className={s.prof_p2}> Followers</p>
         </div>
-        <div className="likes">
-          <p className="prof-p1">{profData.following} </p>
-          <p className="prof-p2"> Following</p>
+        <div className={s.likes}>
+          <p className={s.prof_p1}>{profData.following} </p>
+          <p className={s.prof_p2}> Following</p>
         </div>
-        <div className="photos">
-          <p className="prof-p1">{profData.public_repos}</p>
-          <p className="prof-p2"> Repos</p>
+        <div className={s.photos}>
+          <p className={s.prof_p1}>{profData.public_repos}</p>
+          <p className={s.prof_p2}> Repos</p>
         </div>
       </div>
 
