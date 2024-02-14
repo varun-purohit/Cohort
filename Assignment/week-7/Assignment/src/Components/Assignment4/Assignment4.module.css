@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container input {
+  padding: 1.25rem;
+  margin: 2rem 1rem;
+  width: 50rem;
+}
+
+.container button {
+  border: none;
+  padding: 1.2rem;
+  margin: 2rem 1rem;
+  border-radius: 10px;
+  background-color: rgb(207, 207, 207);
+}
+
+.container p {
+  font-size: 2rem;
+}
